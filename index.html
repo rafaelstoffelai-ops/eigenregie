@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Regie — lokale Projektübersicht für Schweizer Bau- und Handwerksbetriebe. Kein Abo, kein Account, keine Cloud. CHF 49 einmalig.">
+<meta name="theme-color" content="#0368B1">
+<meta property="og:title" content="Regie — lokale Projektübersicht für Bau und Handwerk">
+<meta property="og:description" content="Kein Abo. Kein Account. Keine Cloud. Software die dir gehört. CHF 49 einmalig.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="icons/icon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<title>Regie — Lokale Projektübersicht · Eigenregie</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20width%3D%22502%22%20height%3D%22500%22%20viewBox%3D%220%200%20502%20500%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220.635193%22%20y%3D%220.5%22%20width%3D%22500%22%20height%3D%22100%22%20fill%3D%22%230368B1%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M401.135%20300.5H24.6002C23.4883%20295.305%2022.3978%20290.328%2021.3364%20285.5C21.1791%20284.785%2021.0224%20284.072%2020.8665%20283.363C14.7809%20255.693%209.70658%20232.621%207.13519%20200.5L420.635%20198L401.135%20300.5Z%22%20fill%3D%22%230368B1%22%2F%3E%3Cpath%20d%3D%22M250.635%20499.5C54.8602%20450.254%20-6.58335%20351.091%201.13521%200.5H100.635C80.5338%20264.696%20112.073%20375.1%20250.635%20499.5Z%22%20fill%3D%22%230368B1%22%20stroke%3D%22%230368B1%22%2F%3E%3Cmask%20id%3D%22mask0_0_1%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%22250%22%20y%3D%22-22%22%20width%3D%22252%22%20height%3D%22500%22%3E%3Cpath%20d%3D%22M250.635%20477.5C446.41%20428.254%20507.854%20329.091%20500.135%20-21.5H400.635C420.737%20242.696%20389.197%20353.1%20250.635%20477.5Z%22%20fill%3D%22%230368B1%22%20stroke%3D%22%230368B1%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23mask0_0_1%29%22%3E%3Crect%20x%3D%22290.135%22%20y%3D%2256%22%20width%3D%22363%22%20height%3D%22158%22%20fill%3D%22%230368B1%22%20stroke%3D%22%230368B1%22%2F%3E%3Cpath%20d%3D%22M34.1002%20300.5H310.135H523.635V200.5H310.135H16.6352C19.2066%20232.621%2024.2809%20255.693%2030.3665%20283.363L30.8364%20285.5C31.8978%20290.328%2032.9883%20295.305%2034.1002%20300.5Z%22%20fill%3D%22%230368B1%22%2F%3E%3C%2Fg%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M251.635%20301L415.635%20414.5C390.31%20439.3%20375.114%20451.241%20345.635%20466L116.635%20301H251.635Z%22%20fill%3D%22%230368B1%22%2F%3E%3C%2Fsvg%3E">
+
+<style>
+  /* ═══════════════════════════════════════════════════
+     Regie — Landing Page (Session 5)
+     Brand: Eigenregie (Dach, Indigo) → Regie (Produkt, Blau #0368B1)
+     Tokens 1:1 aus inputs/eigenregie-brand.md + regie/index.html
+  ═══════════════════════════════════════════════════ */
+  :root {
+    --accent:        #0368B1;
+    --accent-hover:  #3d8fd4;
+    --accent-dim:    rgba(3,104,177,0.10);
+    --accent-text:   #024f8a;
+
+    --bg:            #f7f7f5;
+    --surface:       #ffffff;
+    --surface-2:     #f0efe9;
+    --text:          #0f0f0f;
+    --text-secondary:#5c5c5a;
+    --text-muted:    #9a9994;
+
+    --border:        rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.14);
+
+    --success:       #1a7f4b;
+    --success-dim:   rgba(26,127,75,0.10);
+    --warning:       #b45309;
+    --warning-dim:   rgba(180,83,9,0.10);
+
+    --font:         'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --font-display: 'Syne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --radius-sm: 4px;
+    --radius:    6px;
+    --radius-lg: 10px;
+    --radius-xl: 18px;
+    --radius-pill: 999px;
+
+    --ease: cubic-bezier(0.32, 0.72, 0, 1);
+    --transition: 0.18s var(--ease);
+
+    --container: 1180px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection { background: var(--accent); color: #fff; }
+
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ── Reveal-Animation (IntersectionObserver) ── */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+    will-change: opacity, transform;
+  }
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  [data-reveal-delay="1"] { transition-delay: 80ms; }
+  [data-reveal-delay="2"] { transition-delay: 160ms; }
+  [data-reveal-delay="3"] { transition-delay: 240ms; }
+  [data-reveal-delay="4"] { transition-delay: 320ms; }
+
+  /* ─────────────────────────────────────────────
+     NAV (floating Pill)
+  ───────────────────────────────────────────── */
+  .nav-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 18px 24px;
+    pointer-events: none;
+  }
+  .nav {
+    pointer-events: auto;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 8px 8px 8px 18px;
+    background: rgba(255,255,255,0.78);
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border: 0.5px solid var(--border-strong);
+    border-radius: var(--radius-pill);
+  }
+  .nav-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+  .nav-brand .mark {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 13.5px;
+    color: var(--text-secondary);
+    margin-right: 4px;
+  }
+  .nav-links a { transition: color var(--transition); }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    background: var(--text);
+    color: #fff;
+    border-radius: var(--radius-pill);
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: opacity var(--transition);
+  }
+  .nav-cta:hover { opacity: 0.85; }
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    .nav { max-width: none; }
+  }
+
+  /* ─────────────────────────────────────────────
+     SHARED — Headlines, eyebrows, CTAs
+  ───────────────────────────────────────────── */
+  .eyebrow {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    background: var(--accent-dim);
+    color: var(--accent-text);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+  .eyebrow--ghost {
+    background: transparent;
+    border: 0.5px solid var(--border-strong);
+    color: var(--text-secondary);
+  }
+
+  .h-display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.0;
+    color: var(--text);
+  }
+  .h1 { font-size: clamp(44px, 7vw, 88px); }
+  .h2 { font-size: clamp(34px, 4.6vw, 56px); letter-spacing: -0.025em; line-height: 1.05; }
+
+  .lead {
+    color: var(--text-secondary);
+    font-size: clamp(16px, 1.4vw, 19px);
+    line-height: 1.55;
+    max-width: 56ch;
+  }
+
+  /* Buttons: nested arrow-pill */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 6px 6px 22px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font);
+    font-size: 14.5px;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    transition: opacity var(--transition), transform var(--transition);
+    text-decoration: none;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn:hover { opacity: 0.88; }
+
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary .arrow {
+    width: 36px; height: 36px;
+    border-radius: 999px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.15);
+    transition: transform var(--transition), background var(--transition);
+  }
+  .btn-primary:hover .arrow { transform: translate(2px, -2px); }
+
+  .btn-dark { background: var(--text); color: #fff; }
+  .btn-dark .arrow { background: rgba(255,255,255,0.10); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--text);
+    padding: 12px 18px;
+    border: 0.5px solid var(--border-strong);
+  }
+  .btn-ghost:hover { background: var(--surface); }
+
+  .btn-lg { padding: 10px 10px 10px 28px; font-size: 16px; }
+  .btn-lg .arrow { width: 42px; height: 42px; }
+
+  .arrow svg { width: 16px; height: 16px; stroke-width: 1.8; }
+
+  /* ─────────────────────────────────────────────
+     HERO
+  ───────────────────────────────────────────── */
+  .hero {
+    min-height: calc(100dvh - 120px);
+    padding: 24px 0 96px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    /* Subtle vignette (no gradient text!) — radial fade aus surface in bg, sehr dezent */
+    content: "";
+    position: absolute;
+    inset: -20% -10% auto -10%;
+    height: 70%;
+    background: radial-gradient(60% 80% at 50% 0%, rgba(3,104,177,0.05), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: clamp(36px, 5vw, 88px);
+    align-items: center;
+    padding-top: 56px;
+  }
+  .hero-text { display: flex; flex-direction: column; gap: 24px; }
+  .hero-text h1 { margin-top: 4px; }
+  .hero-text .lead { margin-top: 4px; }
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .hero-meta {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 0.5px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 13.5px;
+  }
+  .hero-meta li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px 6px 0;
+    border-right: 0.5px solid var(--border);
+  }
+  .hero-meta li:last-child { border-right: 0; }
+  .hero-meta li::before {
+    content: "";
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  /* App-Mock — ein nested-Bezel-„Screenshot" rein in CSS */
+  .hero-visual { position: relative; }
+  .mock-shell {
+    padding: 7px;
+    background: linear-gradient(180deg, var(--surface-2), #e8e7e0);
+    border: 0.5px solid var(--border-strong);
+    border-radius: 22px;
+    transform: rotate(0.3deg);
+  }
+  .mock-app {
+    background: var(--surface);
+    border-radius: 16px;
+    border: 0.5px solid var(--border);
+    overflow: hidden;
+    aspect-ratio: 16 / 11;
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    font-size: 12px;
+  }
+  .mock-sidebar {
+    background: #fafaf8;
+    border-right: 0.5px solid var(--border);
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .mock-sidebar-brand {
+    display: flex; align-items: center; gap: 8px;
+    padding: 4px 8px 14px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+  }
+  .mock-sidebar-brand .mark {
+    width: 18px; height: 18px; border-radius: 4px;
+  }
+  .mock-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding-top: 4px;
+  }
+  .mock-nav-item {
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mock-nav-item.is-active {
+    background: var(--accent-dim);
+    color: var(--accent-text);
+    font-weight: 500;
+    box-shadow: inset 2px 0 0 0 var(--accent);
+  }
+  .mock-nav-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--text-muted);
+  }
+  .mock-nav-item.is-active .mock-nav-dot { background: var(--accent); }
+  .mock-content {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    overflow: hidden;
+  }
+  .mock-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .mock-toolbar-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+  .mock-stats {
+    display: flex; gap: 12px;
+    color: var(--text-muted);
+    font-size: 11px;
+  }
+  .mock-stats span b { color: var(--text); font-weight: 600; }
+  .mock-rows {
+    display: flex; flex-direction: column;
+    gap: 1px;
+  }
+  .mock-row {
+    display: grid;
+    grid-template-columns: 14px minmax(0, 1.6fr) 1fr 70px;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 6px;
+    border-bottom: 0.5px solid var(--border);
+    font-size: 12px;
+  }
+  .mock-row:last-child { border-bottom: 0; }
+  .mock-row .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+  .mock-row .name {
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mock-row .name small {
+    display: block;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 10.5px;
+  }
+  .mock-bar {
+    position: relative;
+    height: 3px;
+    background: rgba(0,0,0,0.08);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .mock-bar > span {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: var(--accent);
+  }
+  .mock-badge {
+    justify-self: end;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .mock-badge.aktiv   { background: var(--accent-dim); color: var(--accent-text); }
+  .mock-badge.fertig  { background: var(--success-dim); color: var(--success); }
+  .mock-badge.warten  { background: var(--warning-dim); color: var(--warning); }
+
+  @media (max-width: 980px) {
+    .hero-grid { grid-template-columns: 1fr; padding-top: 32px; }
+    .hero-visual { order: 2; }
+    .mock-shell { transform: none; }
+    .mock-app { aspect-ratio: 16 / 12; }
+  }
+  @media (max-width: 520px) {
+    .mock-app { grid-template-columns: 132px 1fr; font-size: 11px; }
+    .mock-sidebar { padding: 10px 6px; }
+    .mock-content { padding: 12px 12px; }
+  }
+
+  /* ─────────────────────────────────────────────
+     SECTION SCAFFOLD
+  ───────────────────────────────────────────── */
+  .section { padding: clamp(80px, 11vw, 140px) 0; }
+  .section-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: clamp(28px, 5vw, 72px);
+    align-items: end;
+    margin-bottom: clamp(40px, 5vw, 64px);
+  }
+  .section-head .lead { justify-self: start; }
+  @media (max-width: 820px) {
+    .section-head { grid-template-columns: 1fr; align-items: start; gap: 18px; }
+  }
+  .section-head h2 { margin-top: 14px; }
+
+  .section--surface { background: var(--surface-2); }
+  .section--paper   { background: var(--surface); }
+
+  /* ─────────────────────────────────────────────
+     WARUM (4 Punkte)
+  ───────────────────────────────────────────── */
+  .warum-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    border-top: 0.5px solid var(--border);
+  }
+  .warum-item {
+    padding: 36px 28px 32px;
+    border-right: 0.5px solid var(--border);
+    border-bottom: 0.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .warum-item:nth-child(4n) { border-right: 0; }
+  .warum-num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+  }
+  .warum-item h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--text);
+  }
+  .warum-item p {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+  @media (max-width: 980px) {
+    .warum-grid { grid-template-columns: repeat(2, 1fr); }
+    .warum-item:nth-child(2n) { border-right: 0; }
+    .warum-item:nth-child(4n) { border-right: 0.5px solid var(--border); }
+    .warum-item:nth-child(2n) { border-right: 0; }
+  }
+  @media (max-width: 600px) {
+    .warum-grid { grid-template-columns: 1fr; }
+    .warum-item { border-right: 0; padding: 28px 20px; }
+  }
+
+  /* ─────────────────────────────────────────────
+     FEATURES (asymmetric Bento)
+     Layout: 6-Spalten-Raster
+       Row 1: wide(4)  +  side(2)
+       Row 2: tall(2)  +  wide(4)        ← zigzag, nicht 3-equal
+  ───────────────────────────────────────────── */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+  }
+  .feat-card {
+    position: relative;
+    padding: 32px 32px 28px;
+    background: var(--surface);
+    border: 0.5px solid var(--border-strong);
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+  }
+  .feat-card--wide  { grid-column: span 4; }
+  .feat-card--small { grid-column: span 2; }
+  .feat-tag {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  .feat-card h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(22px, 2vw, 28px);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .feat-card p {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    line-height: 1.6;
+    max-width: 56ch;
+  }
+  .feat-visual {
+    margin-top: auto;
+    border-top: 0.5px solid var(--border);
+    padding-top: 18px;
+  }
+
+  /* Visual: Phasen-Pipeline */
+  .vis-phasen {
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+  }
+  .vis-phase {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: var(--radius);
+    background: var(--surface-2);
+    border: 0.5px solid var(--border);
+    font-size: 11.5px;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .vis-phase.is-done {
+    background: var(--success-dim);
+    border-color: rgba(26,127,75,0.2);
+    color: var(--success);
+  }
+  .vis-phase.is-active {
+    background: var(--accent-dim);
+    border-color: rgba(3,104,177,0.25);
+    color: var(--accent-text);
+  }
+  .vis-phase b {
+    display: block;
+    font-size: 12.5px;
+    color: inherit;
+    font-weight: 600;
+  }
+  .vis-phase .vis-bar {
+    height: 3px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.08);
+    overflow: hidden;
+    position: relative;
+  }
+  .vis-phase .vis-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: var(--p, 0%);
+    background: currentColor;
+    opacity: 0.6;
+  }
+
+  /* Visual: Aufgaben-Liste */
+  .vis-tasks {
+    display: flex; flex-direction: column;
+    gap: 6px;
+    font-size: 12.5px;
+  }
+  .vis-task {
+    display: grid;
+    grid-template-columns: 14px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .vis-task:last-child { border-bottom: 0; }
+  .vis-check {
+    width: 14px; height: 14px;
+    border-radius: 4px;
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+  }
+  .vis-task.is-done .vis-check {
+    background: var(--accent);
+    border-color: var(--accent);
+    position: relative;
+  }
+  .vis-task.is-done .vis-check::after {
+    content: "";
+    position: absolute;
+    left: 3px; top: 1px;
+    width: 4px; height: 8px;
+    border: solid #fff;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+  }
+  .vis-task.is-done .vis-label {
+    color: var(--text-muted);
+    text-decoration: line-through;
+  }
+  .vis-pill {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(0,0,0,0.04);
+  }
+  .vis-pill.hoch  { background: rgba(192,57,43,0.10); color: #c0392b; }
+  .vis-pill.heute { background: var(--accent-dim);    color: var(--accent-text); }
+
+  /* Visual: PDF-Mini-Vorschau */
+  .vis-pdf {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+  .vis-pdf-page {
+    aspect-ratio: 1 / 1.41;
+    background: #fff;
+    border: 0.5px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .vis-pdf-page::before {
+    content: "Regie";
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 8px;
+    color: var(--text-muted);
+    letter-spacing: -0.02em;
+  }
+  .vis-pdf-line {
+    height: 2px;
+    background: var(--border-strong);
+    border-radius: 1px;
+  }
+  .vis-pdf-line.short { width: 50%; }
+  .vis-pdf-line.medium { width: 75%; }
+  .vis-pdf-spacer { height: 4px; }
+  .vis-pdf-info {
+    display: flex; flex-direction: column;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--text-secondary);
+  }
+  .vis-pdf-info b {
+    color: var(--text);
+    font-weight: 600;
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    font-size: 13.5px;
+  }
+  .vis-pdf-info code {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 11.5px;
+    background: var(--surface-2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 0.5px solid var(--border);
+    color: var(--text-secondary);
+    word-break: break-all;
+  }
+
+  @media (max-width: 980px) {
+    .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .feat-card--wide  { grid-column: span 2; }
+    .feat-card--small { grid-column: span 1; }
+  }
+  @media (max-width: 600px) {
+    .features-grid { grid-template-columns: 1fr; }
+    .feat-card--wide, .feat-card--small { grid-column: span 1; }
+    .feat-card { padding: 24px 22px; }
+  }
+
+  /* ─────────────────────────────────────────────
+     PREIS
+  ───────────────────────────────────────────── */
+  .preis-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: clamp(36px, 5vw, 80px);
+    align-items: center;
+  }
+  @media (max-width: 880px) {
+    .preis-wrap { grid-template-columns: 1fr; }
+  }
+  .preis-copy h2 { margin-top: 14px; max-width: 14ch; }
+  .preis-copy p { margin-top: 18px; }
+  .preis-card {
+    background: var(--surface);
+    border: 0.5px solid var(--border-strong);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+  }
+  .preis-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-xl);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+    pointer-events: none;
+  }
+  .preis-old {
+    color: var(--text-muted);
+    font-size: 18px;
+    text-decoration: line-through;
+    font-weight: 500;
+  }
+  .preis-new {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(48px, 6vw, 72px);
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--accent);
+    margin-top: -14px;
+  }
+  .preis-suffix {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-top: -4px;
+  }
+  .preis-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 0;
+    border-top: 0.5px solid var(--border);
+    border-bottom: 0.5px solid var(--border);
+  }
+  .preis-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--text);
+  }
+  .preis-list .check {
+    width: 18px; height: 18px; flex: none;
+    border-radius: 50%;
+    background: var(--accent-dim);
+    color: var(--accent);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .preis-list .check svg { width: 11px; height: 11px; stroke-width: 2.4; }
+  .preis-card .btn { align-self: flex-start; }
+  .preis-fineprint {
+    color: var(--text-muted);
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  /* ─────────────────────────────────────────────
+     FOOTER
+  ───────────────────────────────────────────── */
+  .footer {
+    border-top: 0.5px solid var(--border);
+    padding: 56px 0 48px;
+    color: var(--text-secondary);
+    font-size: 13.5px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 28px;
+  }
+  .footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+  .footer-brand .mark { width: 22px; height: 22px; border-radius: 5px; }
+  .footer-tagline { margin-top: 10px; max-width: 36ch; }
+  .footer-col h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .footer-col a { color: var(--text-secondary); transition: color var(--transition); }
+  .footer-col a:hover { color: var(--text); }
+  .footer-meta {
+    border-top: 0.5px solid var(--border);
+    margin-top: 36px;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: var(--text-muted);
+    font-size: 12.5px;
+  }
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Reduced motion: respect users */
+  @media (prefers-reduced-motion: reduce) {
+    [data-reveal] { opacity: 1; transform: none; transition: none; }
+    .btn:active { transform: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Inline SVG-Sprite (wird per <use> referenziert) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Regie-Schild „R" — vereinfachte Variante des Logos -->
+    <symbol id="i-mark" viewBox="0 0 502 500">
+      <rect x="0.6" y="0.5" width="500" height="100" fill="currentColor"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M401.1 300.5H24.6c-1.1-5.2-2.2-10.2-3.3-15-6.1-27.7-11.2-50.8-13.8-82.9l413.5-2.5L401.1 300.5z" fill="currentColor"/>
+      <path d="M250.6 499.5C54.9 450.3-6.6 351.1 1.1.5h99.5c-20.1 264.2 11.4 374.6 150 499z" fill="currentColor"/>
+      <path d="M251.6 301l164 113.5c-25.3 24.8-40.5 36.7-70 51.5L116.6 301h135z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"/>
+      <polyline points="8 7 17 7 17 16"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="5 12 10 17 19 7"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ─── NAV ─── -->
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a class="nav-brand" href="#">
+      <svg class="mark" style="color:#0368B1" aria-hidden="true"><use href="#i-mark"/></svg>
+      Regie
+    </a>
+    <div class="nav-links">
+      <a href="#warum">Warum</a>
+      <a href="#funktionen">Funktionen</a>
+      <a href="#kaufen">Preis</a>
+    </div>
+    <a class="nav-cta" href="#kaufen">
+      Kaufen — CHF 49
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow" data-reveal>Eigenregie · Regie 1.0</span>
+        <h1 class="h-display h1" data-reveal data-reveal-delay="1">Alle Bauprojekte<br>im Blick.</h1>
+        <p class="lead" data-reveal data-reveal-delay="2">Lokale Projektübersicht für Schweizer Bau- und Handwerksbetriebe. Phasen, Aufgaben, Zeiterfassung, PDF — ein Werkzeug, das du einmal kaufst und für immer behältst.</p>
+        <div class="hero-cta" data-reveal data-reveal-delay="3">
+          <a class="btn btn-primary btn-lg" href="https://eigenregie.lemonsqueezy.com/checkout/buy/1ba1121f-b560-4b4b-bc22-f82cbd02a91c">
+            <span>Kaufen — CHF 49</span>
+            <span class="arrow"><svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
+          </a>
+          <a class="btn btn-ghost" href="#warum">Mehr erfahren</a>
+        </div>
+        <ul class="hero-meta" data-reveal data-reveal-delay="4">
+          <li>Kein Abo</li>
+          <li>Kein Account</li>
+          <li>Keine Cloud</li>
+          <li>Daten bleiben lokal</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal data-reveal-delay="2" aria-hidden="true">
+        <div class="mock-shell">
+          <div class="mock-app">
+            <aside class="mock-sidebar">
+              <div class="mock-sidebar-brand">
+                <svg class="mark" style="color:#0368B1"><use href="#i-mark"/></svg>
+                Regie
+              </div>
+              <div class="mock-nav">
+                <div class="mock-nav-item is-active"><span class="mock-nav-dot"></span>Übersicht</div>
+                <div class="mock-nav-item"><span class="mock-nav-dot"></span>Tagesübersicht</div>
+                <div class="mock-nav-item"><span class="mock-nav-dot"></span>Zeiterfassung</div>
+                <div class="mock-nav-item"><span class="mock-nav-dot"></span>Gantt</div>
+                <div class="mock-nav-item"><span class="mock-nav-dot"></span>Einstellungen</div>
+              </div>
+            </aside>
+            <div class="mock-content">
+              <div class="mock-toolbar">
+                <span class="mock-toolbar-title">Übersicht</span>
+                <div class="mock-stats">
+                  <span><b>12</b> aktiv</span>
+                  <span><b>4</b> abgeschlossen</span>
+                </div>
+              </div>
+              <div class="mock-rows">
+                <div class="mock-row">
+                  <span class="dot" style="background:#5c7cfa"></span>
+                  <span class="name">Einfamilienhaus Müller<small>2026-014 · Müller AG</small></span>
+                  <span class="mock-bar"><span style="width:64%"></span></span>
+                  <span class="mock-badge aktiv">Aktiv</span>
+                </div>
+                <div class="mock-row">
+                  <span class="dot" style="background:#0368B1"></span>
+                  <span class="name">Sanierung Bachstrasse<small>2026-009 · Stadt Brig</small></span>
+                  <span class="mock-bar"><span style="width:88%"></span></span>
+                  <span class="mock-badge aktiv">Aktiv</span>
+                </div>
+                <div class="mock-row">
+                  <span class="dot" style="background:#1a7f4b"></span>
+                  <span class="name">Garage Sutter<small>2025-217 · Sutter & Partner</small></span>
+                  <span class="mock-bar"><span style="width:100%"></span></span>
+                  <span class="mock-badge fertig">Fertig</span>
+                </div>
+                <div class="mock-row">
+                  <span class="dot" style="background:#b45309"></span>
+                  <span class="name">Dachausbau Lehner<small>2026-021 · Lehner GmbH</small></span>
+                  <span class="mock-bar"><span style="width:22%"></span></span>
+                  <span class="mock-badge warten">Wartet</span>
+                </div>
+                <div class="mock-row">
+                  <span class="dot" style="background:#5e4fe0"></span>
+                  <span class="name">Umbau Café Zentral<small>2026-002 · Z. Holding</small></span>
+                  <span class="mock-bar"><span style="width:46%"></span></span>
+                  <span class="mock-badge aktiv">Aktiv</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WARUM ─── -->
+  <section class="section section--surface" id="warum">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <span class="eyebrow eyebrow--ghost">Warum Regie</span>
+          <h2 class="h-display h2">Kein Abo. Kein Account.<br>Keine Cloud.</h2>
+        </div>
+        <p class="lead">Software, die nicht versucht, dir mehr zu verkaufen. Die einfach funktioniert. Und die dir gehört.</p>
+      </div>
+
+      <div class="warum-grid">
+        <div class="warum-item" data-reveal>
+          <span class="warum-num">01</span>
+          <h3>Lokal</h3>
+          <p>Deine Daten leben auf deiner Festplatte. Regie braucht keine Internetverbindung — und keine Verbindung zu unseren Servern, weil es keine gibt.</p>
+        </div>
+        <div class="warum-item" data-reveal data-reveal-delay="1">
+          <span class="warum-num">02</span>
+          <h3>Einmalig</h3>
+          <p>Einmal CHF 49 — für immer behalten. Kein monatliches Abo, keine Pro-Variante, keine versteckten Upgrade-Kosten.</p>
+        </div>
+        <div class="warum-item" data-reveal data-reveal-delay="2">
+          <span class="warum-num">03</span>
+          <h3>Kein Account</h3>
+          <p>Keine E-Mail-Pflicht, kein Passwort. Du klickst „Installieren", öffnest die App und arbeitest. Punkt.</p>
+        </div>
+        <div class="warum-item" data-reveal data-reveal-delay="3">
+          <span class="warum-num">04</span>
+          <h3>Daten lokal</h3>
+          <p>Regie speichert in einen Ordner deiner Wahl. Wer ihn in Dropbox oder iCloud legt, hat automatisches Backup — ohne dass Regie Cloud-Software ist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="section" id="funktionen">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <span class="eyebrow eyebrow--ghost">Funktionen</span>
+          <h2 class="h-display h2">Drei Werkzeuge,<br>die wirklich helfen.</h2>
+        </div>
+        <p class="lead">Gebaut für Schweizer Handwerks- und Baubetriebe von 1 bis 10 Mitarbeitenden. Keine Feature-Listen für Enterprise-Kunden — nur, was du täglich brauchst.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <!-- Card 1: wide -->
+        <article class="feat-card feat-card--wide" data-reveal>
+          <div class="feat-tag">01 / Projekte &amp; Phasen</div>
+          <h3>Vom Auftrag bis zur Abnahme.</h3>
+          <p>Phasen wie Vorbereitung, Bauphase und Abnahme — abgebildet wie auf der echten Baustelle. Mit automatischem Fortschritt, Gantt-Ansicht und wiederverwendbaren Vorlagen für Standardprojekte.</p>
+          <div class="feat-visual">
+            <div class="vis-phasen">
+              <div class="vis-phase is-done">
+                <b>Vorbereitung</b>
+                <div class="vis-bar" style="--p:100%"></div>
+                <span>Abgeschlossen</span>
+              </div>
+              <div class="vis-phase is-done">
+                <b>Offerte</b>
+                <div class="vis-bar" style="--p:100%"></div>
+                <span>Abgeschlossen</span>
+              </div>
+              <div class="vis-phase is-active">
+                <b>Bauphase</b>
+                <div class="vis-bar" style="--p:64%"></div>
+                <span>64 % · läuft</span>
+              </div>
+              <div class="vis-phase">
+                <b>Abnahme</b>
+                <div class="vis-bar" style="--p:0%"></div>
+                <span>Ausstehend</span>
+              </div>
+              <div class="vis-phase">
+                <b>Gewährleistung</b>
+                <div class="vis-bar" style="--p:0%"></div>
+                <span>Ausstehend</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: small -->
+        <article class="feat-card feat-card--small" data-reveal data-reveal-delay="1">
+          <div class="feat-tag">02 / Aufgaben &amp; Fristen</div>
+          <h3>Nichts geht mehr unter.</h3>
+          <p>Aufgaben pro Phase, mit Priorität und Fälligkeit. Die Tagesübersicht zeigt jeden Morgen, was heute ansteht.</p>
+          <div class="feat-visual">
+            <div class="vis-tasks">
+              <div class="vis-task is-done"><span class="vis-check"></span><span class="vis-label">Material bestellen</span><span class="vis-pill">erledigt</span></div>
+              <div class="vis-task"><span class="vis-check"></span><span class="vis-label">Bauleiter informieren</span><span class="vis-pill heute">heute</span></div>
+              <div class="vis-task"><span class="vis-check"></span><span class="vis-label">Statik prüfen lassen</span><span class="vis-pill hoch">hoch</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: small (gleiche Breite) -->
+        <article class="feat-card feat-card--small" data-reveal data-reveal-delay="1">
+          <div class="feat-tag">03 / Zeiterfassung</div>
+          <h3>Stempeln. Auswerten.</h3>
+          <p>Timer pro Projekt, manuelle Einträge, CSV-Export für die Buchhaltung — ohne Umweg über Excel.</p>
+          <div class="feat-visual">
+            <div class="vis-tasks">
+              <div class="vis-task"><span class="vis-check" style="background:var(--accent);border-color:var(--accent)"></span><span class="vis-label">Müller AG · Bauphase</span><span class="vis-pill heute">2h 14min</span></div>
+              <div class="vis-task is-done"><span class="vis-check"></span><span class="vis-label">Stadt Brig · Sanierung</span><span class="vis-pill">3h 48min</span></div>
+              <div class="vis-task is-done"><span class="vis-check"></span><span class="vis-label">Sutter &amp; Partner · Garage</span><span class="vis-pill">1h 02min</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: wide (PDF) -->
+        <article class="feat-card feat-card--wide" data-reveal data-reveal-delay="2">
+          <div class="feat-tag">04 / PDF-Export</div>
+          <h3>Auf Knopfdruck zum druckfertigen Bericht.</h3>
+          <p>Ein Klick und Regie baut ein sauber gesetztes A4-PDF: Projektheader, Phasenübersicht, offene Aufgaben, Zeit-Summary. Schwarz/weiss, druckfertig — ohne Layout-Bastelei.</p>
+          <div class="feat-visual">
+            <div class="vis-pdf">
+              <div class="vis-pdf-page" aria-hidden="true">
+                <div class="vis-pdf-line medium" style="margin-top:6px"></div>
+                <div class="vis-pdf-spacer"></div>
+                <div class="vis-pdf-line"></div>
+                <div class="vis-pdf-line short"></div>
+                <div class="vis-pdf-line"></div>
+                <div class="vis-pdf-spacer"></div>
+                <div class="vis-pdf-line short"></div>
+                <div class="vis-pdf-line medium"></div>
+                <div class="vis-pdf-line short"></div>
+              </div>
+              <div class="vis-pdf-info">
+                <b>Regie_Müller-AG_2026-05-09.pdf</b>
+                <code>A4 · 3 Seiten · 412 KB</code>
+                <span>Header · Phasen · Aufgaben · Zeiten · Footer</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PREIS ─── -->
+  <section class="section section--paper" id="kaufen">
+    <div class="container preis-wrap">
+      <div class="preis-copy" data-reveal>
+        <span class="eyebrow">Preis</span>
+        <h2 class="h-display h2">Einmal kaufen.<br>Für immer nutzen.</h2>
+        <p class="lead">Ein Preis, einmalig. Keine Free-Tier, kein Pro-Upsell, keine Abo-Falle. Du bekommst die App, alle zukünftigen Updates und 30 Tage Geld-zurück-Garantie.</p>
+      </div>
+
+      <div class="preis-card" data-reveal data-reveal-delay="1">
+        <div class="preis-old">CHF 79</div>
+        <div class="preis-new">CHF 49</div>
+        <div class="preis-suffix">einmalig · keine Folgekosten · MwSt. ausgewiesen</div>
+        <ul class="preis-list">
+          <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Voller Funktionsumfang</li>
+          <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Alle zukünftigen Updates inbegriffen</li>
+          <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Läuft auf Mac, Windows und Linux</li>
+          <li><span class="check"><svg aria-hidden="true"><use href="#i-check"/></svg></span>30 Tage Geld-zurück-Garantie</li>
+        </ul>
+        <a class="btn btn-primary btn-lg" href="https://eigenregie.lemonsqueezy.com/checkout/buy/1ba1121f-b560-4b4b-bc22-f82cbd02a91c">
+          <span>Jetzt kaufen — CHF 49</span>
+          <span class="arrow"><svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></span>
+        </a>
+        <p class="preis-fineprint">Lieferung als digitaler Download direkt nach Zahlung. Zahlung via Lemon Squeezy — Kreditkarte oder PayPal. Schweizer MwSt. wird automatisch korrekt berechnet.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-brand">
+          <svg class="mark" style="color:#0368B1" aria-hidden="true"><use href="#i-mark"/></svg>
+          Regie
+        </span>
+        <p class="footer-tagline">Eigenregie · Software die dir gehört. Lokale Werkzeuge für Menschen, die ihre Arbeit selbst in der Hand haben.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Regie</h4>
+        <ul>
+          <li><a href="#warum">Warum Regie</a></li>
+          <li><a href="#funktionen">Funktionen</a></li>
+          <li><a href="#kaufen">Preis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>© 2026 Eigenregie</span>
+      <span>Made in der Schweiz</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll-Reveal via IntersectionObserver — keine externe Lib, kein Scroll-Listener.
+  (function () {
+    const els = document.querySelectorAll('[data-reveal]');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      }
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    els.forEach(el => io.observe(el));
+  })();
+</script>
+
+</body>
+</html>

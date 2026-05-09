@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Impressum — Eigenregie · Rafael Stoffel">
+<meta name="theme-color" content="#0368B1">
+<meta name="robots" content="index,follow">
+<title>Impressum — Eigenregie</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20width%3D%22502%22%20height%3D%22500%22%20viewBox%3D%220%200%20502%20500%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220.635193%22%20y%3D%220.5%22%20width%3D%22500%22%20height%3D%22100%22%20fill%3D%22%230368B1%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M401.135%20300.5H24.6002C23.4883%20295.305%2022.3978%20290.328%2021.3364%20285.5C21.1791%20284.785%2021.0224%20284.072%2020.8665%20283.363C14.7809%20255.693%209.70658%20232.621%207.13519%20200.5L420.635%20198L401.135%20300.5Z%22%20fill%3D%22%230368B1%22%2F%3E%3Cpath%20d%3D%22M250.635%20499.5C54.8602%20450.254%20-6.58335%20351.091%201.13521%200.5H100.635C80.5338%20264.696%20112.073%20375.1%20250.635%20499.5Z%22%20fill%3D%22%230368B1%22%20stroke%3D%22%230368B1%22%2F%3E%3Cmask%20id%3D%22mask0_0_1%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%22250%22%20y%3D%22-22%22%20width%3D%22252%22%20height%3D%22500%22%3E%3Cpath%20d%3D%22M250.635%20477.5C446.41%20428.254%20507.854%20329.091%20500.135%20-21.5H400.635C420.737%20242.696%20389.197%20353.1%20250.635%20477.5Z%22%20fill%3D%22%230368B1%22%20stroke%3D%22%230368B1%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23mask0_0_1%29%22%3E%3Crect%20x%3D%22290.135%22%20y%3D%2256%22%20width%3D%22363%22%20height%3D%22158%22%20fill%3D%22%230368B1%22%20stroke%3D%22%230368B1%22%2F%3E%3Cpath%20d%3D%22M34.1002%20300.5H310.135H523.635V200.5H310.135H16.6352C19.2066%20232.621%2024.2809%20255.693%2030.3665%20283.363L30.8364%20285.5C31.8978%20290.328%2032.9883%20295.305%2034.1002%20300.5Z%22%20fill%3D%22%230368B1%22%2F%3E%3C%2Fg%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M251.635%20301L415.635%20414.5C390.31%20439.3%20375.114%20451.241%20345.635%20466L116.635%20301H251.635Z%22%20fill%3D%22%230368B1%22%2F%3E%3C%2Fsvg%3E">
+
+<style>
+  /* Brand-Tokens (Subset aus index.html / landing.html) */
+  :root {
+    --accent:        #0368B1;
+    --accent-dim:    rgba(3,104,177,0.10);
+    --accent-text:   #024f8a;
+    --bg:            #f7f7f5;
+    --surface:       #ffffff;
+    --surface-2:     #f0efe9;
+    --text:          #0f0f0f;
+    --text-secondary:#5c5c5a;
+    --text-muted:    #9a9994;
+    --border:        rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.14);
+    --font:         'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --font-display: 'Syne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --radius-pill:   999px;
+    --ease: cubic-bezier(0.32, 0.72, 0, 1);
+    --transition: 0.18s var(--ease);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection { background: var(--accent); color: #fff; }
+  a { color: var(--accent-text); text-decoration: none; transition: opacity var(--transition); }
+  a:hover { opacity: 0.7; }
+
+  .container { max-width: 760px; margin: 0 auto; padding: 0 28px; }
+
+  /* Pill-Nav (identisch zur Landing) */
+  .nav-wrap {
+    position: sticky; top: 0; z-index: 50;
+    padding: 18px 24px;
+    pointer-events: none;
+  }
+  .nav {
+    pointer-events: auto;
+    max-width: 720px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 14px;
+    padding: 8px 8px 8px 18px;
+    background: rgba(255,255,255,0.78);
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border: 0.5px solid var(--border-strong);
+    border-radius: var(--radius-pill);
+  }
+  .nav-brand {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 17px; letter-spacing: -0.02em;
+    color: var(--text);
+  }
+  .nav-brand .mark { width: 22px; height: 22px; border-radius: 5px; }
+  .nav-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px;
+    background: var(--text); color: #fff;
+    border-radius: var(--radius-pill);
+    font-size: 13.5px; font-weight: 500;
+    transition: opacity var(--transition);
+  }
+  .nav-cta:hover { opacity: 0.85; }
+
+  /* Page-Layout */
+  main { padding: 56px 0 96px; }
+  .page-head { margin-bottom: 36px; }
+  .eyebrow {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    background: var(--accent-dim);
+    color: var(--accent-text);
+    font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.18em;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(34px, 5vw, 52px);
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--text);
+    margin-top: 14px;
+  }
+  .page-meta {
+    margin-top: 14px;
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  .content { display: flex; flex-direction: column; gap: 32px; }
+  .content section { display: flex; flex-direction: column; gap: 10px; }
+  .content h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+  .content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 8px;
+  }
+  .content p, .content li {
+    color: var(--text-secondary);
+    font-size: 15px;
+  }
+  .content ul {
+    padding-left: 18px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .content dl {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 10px 24px;
+    padding: 18px 0;
+    border-top: 0.5px solid var(--border);
+    border-bottom: 0.5px solid var(--border);
+  }
+  .content dt {
+    color: var(--text-muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+  }
+  .content dd { color: var(--text); font-size: 15px; }
+  @media (max-width: 600px) {
+    .content dl { grid-template-columns: 1fr; gap: 4px 0; }
+    .content dt { margin-top: 8px; }
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 0.5px solid var(--border);
+    padding: 36px 0;
+    color: var(--text-secondary);
+    font-size: 13.5px;
+  }
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-brand {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 15px;
+    color: var(--text); letter-spacing: -0.02em;
+  }
+  .footer-brand .mark { width: 18px; height: 18px; }
+  .footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
+  .footer-links a { color: var(--text-secondary); }
+  .footer-links a:hover { color: var(--text); opacity: 1; }
+  .footer-meta { color: var(--text-muted); font-size: 12.5px; }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-mark" viewBox="0 0 502 500">
+      <rect x="0.6" y="0.5" width="500" height="100" fill="currentColor"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M401.1 300.5H24.6c-1.1-5.2-2.2-10.2-3.3-15-6.1-27.7-11.2-50.8-13.8-82.9l413.5-2.5L401.1 300.5z" fill="currentColor"/>
+      <path d="M250.6 499.5C54.9 450.3-6.6 351.1 1.1.5h99.5c-20.1 264.2 11.4 374.6 150 499z" fill="currentColor"/>
+      <path d="M251.6 301l164 113.5c-25.3 24.8-40.5 36.7-70 51.5L116.6 301h135z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a class="nav-brand" href="index.html">
+      <svg class="mark" style="color:#0368B1" aria-hidden="true"><use href="#i-mark"/></svg>
+      Regie
+    </a>
+    <a class="nav-cta" href="index.html#kaufen">Kaufen — CHF 49</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <div class="page-head">
+      <span class="eyebrow">Rechtliches</span>
+      <h1>Impressum</h1>
+      <p class="page-meta">Angaben gemäss schweizerischem Obligationenrecht und UWG.</p>
+    </div>
+
+    <div class="content">
+      <section>
+        <h2>Anbieter</h2>
+        <dl>
+          <dt>Verantwortlich</dt><dd>Rafael Stoffel</dd>
+          <dt>Land</dt><dd>Schweiz</dd>
+          <dt>E-Mail</dt><dd><a href="mailto:rafaelstoffel.ai@gmail.com">rafaelstoffel.ai@gmail.com</a></dd>
+          <dt>Brand</dt><dd>Eigenregie · Regie</dd>
+          <dt>Website</dt><dd><a href="https://eigenregie.ch">eigenregie.ch</a></dd>
+        </dl>
+        <p>Eigenregie ist ein privat geführtes Software-Projekt von Rafael Stoffel. Es besteht keine Eintragung im Handelsregister; eine UID-Nummer wird daher nicht ausgewiesen. Eine vollständige Postanschrift ist auf Anfrage per E-Mail erhältlich.</p>
+      </section>
+
+      <section>
+        <h2>Verantwortlich für den Inhalt</h2>
+        <p>Rafael Stoffel ist verantwortlich für sämtliche Inhalte unter <a href="https://eigenregie.ch">eigenregie.ch</a> sowie für das angebotene Software-Produkt „Regie".</p>
+      </section>
+
+      <section>
+        <h2>Verkauf und Zahlungsabwicklung</h2>
+        <p>Der Verkauf von „Regie" erfolgt über <a href="https://www.lemonsqueezy.com" rel="noopener" target="_blank">Lemon Squeezy</a> (Lemon Squeezy LLC, 17350 State Highway 249, Suite 220 #12903, Houston, TX 77064, USA). Lemon Squeezy tritt als Merchant of Record auf, übernimmt Zahlungsabwicklung, MwSt.-Erhebung sowie die Auslieferung des digitalen Downloads.</p>
+        <p>Beim Kauf wirst du auf eine Lemon-Squeezy-Domain weitergeleitet. Vertragspartner für die Zahlungsabwicklung ist Lemon Squeezy, Vertragspartner für die Software-Lizenz ist Rafael Stoffel.</p>
+      </section>
+
+      <section>
+        <h2>Haftung</h2>
+        <p>Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität wird jedoch keine Gewähr übernommen. Die Software „Regie" wird in der jeweils aktuellen Version „wie sie ist" zur Verfügung gestellt; eine Garantie für bestimmte Eigenschaften wird nicht abgegeben, soweit nicht zwingende gesetzliche Bestimmungen entgegenstehen.</p>
+      </section>
+
+      <section>
+        <h2>Urheberrecht</h2>
+        <p>Sämtliche Inhalte dieser Website (Texte, Bilder, Logos, Code) sind urheberrechtlich geschützt. Die Marken „Eigenregie" und „Regie" sowie die Logos bleiben Eigentum von Rafael Stoffel.</p>
+      </section>
+
+      <section>
+        <h2>Anwendbares Recht</h2>
+        <p>Es gilt schweizerisches Recht unter Ausschluss kollisionsrechtlicher Bestimmungen. Gerichtsstand ist, soweit gesetzlich zulässig, der Wohnsitz des Anbieters in der Schweiz.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <span class="footer-brand">
+        <svg class="mark" style="color:#0368B1" aria-hidden="true"><use href="#i-mark"/></svg>
+        Regie
+      </span>
+      <div class="footer-links">
+        <a href="index.html">Start</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+      <span class="footer-meta">© 2026 Eigenregie</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
