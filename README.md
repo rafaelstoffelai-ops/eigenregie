@@ -2,13 +2,13 @@
 
 Schweizer Software-Brand für lokale, abo-freie Tools — **Software die dir gehört**.
 
-Live auf [eigenregie.ch](https://eigenregie.ch).
+Live auf [eigenregielokal.ch](https://eigenregielokal.ch).
 
 ## Produkte
 
 | Produkt | Beschreibung | Preis | Status |
 |---|---|---|---|
-| **[Regie](https://eigenregie.ch/#kaufen)** | Lokale Projektübersicht für Schweizer Bau- und Handwerksbetriebe — Phasen, Aufgaben, Zeiterfassung, PDF-Export | CHF 49 einmalig | Verfügbar |
+| **[Regie](https://eigenregielokal.ch/#kaufen)** | Lokale Projektübersicht für Schweizer Bau- und Handwerksbetriebe — Phasen, Aufgaben, Zeiterfassung, PDF-Export | CHF 49 einmalig | Verfügbar |
 
 ## Brand-Architektur
 
@@ -26,4 +26,4 @@ Dieses Repo enthält ausschliesslich die öffentliche Marketing-Site (`index.htm
 
 ## Kontakt
 
-[rafaelstoffel.ai@gmail.com](mailto:rafaelstoffel.ai@gmail.com) · [Impressum](https://eigenregie.ch/impressum.html) · [Datenschutz](https://eigenregie.ch/datenschutz.html)
+[rafaelstoffel.ai@gmail.com](mailto:rafaelstoffel.ai@gmail.com) · [Impressum](https://eigenregielokal.ch/impressum.html) · [Datenschutz](https://eigenregielokal.ch/datenschutz.html)
